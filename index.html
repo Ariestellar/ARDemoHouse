@@ -55,7 +55,7 @@
     } else if (isAndroid) {
       const sceneViewerUrl = "https://arvr.google.com/scene-viewer/1.0";
       const glbUrl = encodeURIComponent("https://raw.githubusercontent.com/Ariestellar/ARDemoHouse/main/Character.glb");
-      const intentUrl = `${sceneViewerUrl}?file=${glbUrl}&mode=ar_preferred&link=${location.href}`;
+      const intentUrl = `${sceneViewerUrl}?file=${glbUrl}&mode=ar_preferred&disable_occlusion=true&link=${location.href}`;
 
       arLink.setAttribute("href", intentUrl);
       arLink.removeAttribute("rel");
